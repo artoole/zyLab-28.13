@@ -9,15 +9,15 @@ int main() {
 
     // Item 1
     cout << "Item 1" << endl;
-    cout << "Enter the item name: ";
+    cout << "Enter the item name:" << endl;
     getline(cin, name);
     item1.SetName(name);
 
-    cout << "Enter the item price: ";
+    cout << "Enter the item price:" << endl;
     cin >> price;
     item1.SetPrice(price);
 
-    cout << "Enter the item quantity: ";
+    cout << "Enter the item quantity:" << endl;
     cin >> quantity;
     item1.SetQuantity(quantity);
 
@@ -25,15 +25,15 @@ int main() {
 
     // Item 2
     cout << "\nItem 2" << endl;
-    cout << "Enter the item name: ";
+    cout << "Enter the item name:" << endl;
     getline(cin, name);
     item2.SetName(name);
 
-    cout << "Enter the item price: ";
+    cout << "Enter the item price:" << endl;
     cin >> price;
     item2.SetPrice(price);
 
-    cout << "Enter the item quantity: ";
+    cout << "Enter the item quantity:" << endl;
     cin >> quantity;
     item2.SetQuantity(quantity);
 
@@ -42,9 +42,8 @@ int main() {
     int totalCost = (item1.GetQuantity() * item1.GetPrice()) + (item2.GetQuantity() * item2.GetPrice());
     cout << item1.GetName() << " " << item1.GetQuantity() << " @ $" << item1.GetPrice() << " = $" << (item1.GetQuantity() * item1.GetPrice()) << endl;
     cout << item2.GetName() << " " << item2.GetQuantity() << " @ $" << item2.GetPrice() << " = $" << (item2.GetQuantity() * item2.GetPrice()) << endl;
-
+    cout << endl;
     cout << "Total: $" << totalCost << endl;
 
     return 0;
 }
-
